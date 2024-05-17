@@ -1,70 +1,160 @@
-/* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  min-height: 100vh;
 }
 
 body {
-  background-color: #D9D9D9;
+  color: #d9d9d9;
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  line-height: 1.5;
 }
-.container {
-  padding: 1rem 0 1rem 0;
-  height: 10rem;
-  margin-top: 10rem;
+
+.menu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
+  justify-content: space-between;
+  align-items: center;
+  background-color: #115b04;
+}
+.menu__home {
+  text-decoration: none;
+  color: #d9d9d9;
 }
 
-.projekt_info {
-  border: 3px solid #115B04;
-  border-radius:  10px;
+.menu__title {
+  padding-left: 2rem;
+  font-size: 4rem;
+  font-family: Michroma, sans-serif;
+}
+
+.menu__sidebar {
+  display: flex;
+}
+
+.menu__sidebar li {
+  display: inline-block;
+}
+
+.menu__sidebar a {
+  display: inline-block;
+  color: #d9d9d9;
+  text-decoration: none;
+  padding: 2rem 3rem;
+  font-size: 2.5rem;
+}
+
+.main__board {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main__sidebar--left {
+  margin: 12rem 3rem auto 8rem;
+}
+
+.main__sidebar--right {
+  margin: 12rem 8rem auto 3rem;
+}
+
+.main__sidebar a {
+  text-decoration: none;
+}
+
+.main__jarca,
+.main__janca {
+  max-height: 50vh;
+}
+
+.main__jarca:hover,
+.main__janca:hover {
+  transform: scale(1.05);
+}
+
+.main__name {
+  color: #115b04;
+  font-family: Michroma, sans-serif;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.main__middlebar {
+  min-width: 60vw;
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  position: relative;
+}
+
+.main__click {
+  position: absolute;
+  width: 300px;
+  top: 45%;
+  left: 47%;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 47%;
+  }
+  50% {
+    left: 43%;
+  }
+  70% {
+    right: 51%;
+  }
+  100% {
+    left: 47%;
+  }
+}
+
+.main__projekt {
+  min-width: 100%;
+  border: 8px solid white;
+  border-radius: 50px;
+}
+
+.main__projekt:hover {
+  transform: scale(1.02);
+}
+
+.main__middlebar img:hover {
+  filter: grayscale(0%);
+}
+
+.projekt_info,
+.jarca_info,
+.janca_info {
+  border: 3px solid #115b04;
+  color: #115b04;
+  border-radius: 10px;
   padding: 1rem 1rem 1rem 1em;
-  margin-right: 25rem ;
+  margin-right: 25rem;
   margin-left: 25rem;
   margin-top: 10rem;
   background-color: white;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
 }
 
 button {
   width: 10rem;
   height: 3rem;
   padding: 1rem 1rem 1rem 1em;
-  border: 3px solid #115B04;
-  border-radius:  10px;
+  border: 3px solid #115b04;
+  border-radius: 10px;
   background-color: white;
   cursor: pointer;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: large;
 }
-
-.jarca_info{
-  border: 3px solid #115B04;
-  border-radius:  10px;
-  padding: 1rem 1rem 1rem 1em;
-  margin-right: 25rem ;
-  margin-left: 25rem;
-  margin-top: 10rem;
-  background-color: white;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
-}
-
-.janca_info{
-  border: 3px solid #115B04;
-  border-radius:  10px;
-  padding: 1rem 1rem 1rem 1em;
-  margin-right: 25rem ;
-  margin-left: 25rem;
-  margin-top: 10rem;
-  background-color: white;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
-}
-
