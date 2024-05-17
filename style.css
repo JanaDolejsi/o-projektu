@@ -7,8 +7,64 @@ html {
   font-family: sans-serif;
 }
 
-.container {
-  max-width: 20rem;
-  margin-right: auto;
-  margin-left: auto;
+body {
+  background-color: #D9D9D9;
 }
+.container {
+  padding: 1rem 0 1rem 0;
+  height: 10rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.projekt_info {
+  border: 3px solid #115B04;
+  border-radius:  10px;
+  padding: 1rem 1rem 1rem 1em;
+  margin-right: 25rem ;
+  margin-left: 25rem;
+  margin-top: 10rem;
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  padding: 1rem 1rem 1rem 1em;
+  border: 3px solid #115B04;
+  border-radius:  10px;
+  background-color: white;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+.jarca_info{
+  border: 3px solid #115B04;
+  border-radius:  10px;
+  padding: 1rem 1rem 1rem 1em;
+  margin-right: 25rem ;
+  margin-left: 25rem;
+  margin-top: 10rem;
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+.janca_info{
+  border: 3px solid #115B04;
+  border-radius:  10px;
+  padding: 1rem 1rem 1rem 1em;
+  margin-right: 25rem ;
+  margin-left: 25rem;
+  margin-top: 10rem;
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
