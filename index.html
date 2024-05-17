@@ -5,20 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js"></script>
-    <title>Webová aplikace</title>
+    <title>Rules Open 2024 | Home</title>
+
+    <!-- Prolinkování písma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
   </head>
-<body>
-  <div class="container">
-    <div class="jarca">
-      
-      <a href="jarca.html"><button>Jarča</button></a>
-    </div>
-    <div class="projekt">
-      <a href="projekt.html"><button>O projektu</button></a>
-    </div>
-    <div class="janca">
-      <a href="janca.html"><button>Janča</button></a>
-    </div>
-  </div>
-</body>
+  <body>
+    <nav class="menu">
+      <a href="index.html" class="menu__home"
+        ><h1 class="menu__title">RULES OPEN 2024</h1></a
+      >
+      <ul class="menu__sidebar">
+        <li><a href="projekt.html">O projektu</a></li>
+        <li><a href="janca.html">Janča</a></li>
+        <li><a href="jarca.html">Jarmila</a></li>
+        <li><a href="kontakty.html">Kontakty</a></li>
+      </ul>
+    </nav>
+
+    <main class="main__board">
+      <div class="main__sidebar main__sidebar--left">
+        <a href="janca.html">
+          <p class="main__name main__name--janca">Janča</p>
+          <img
+            src="./img/janca.png"
+            alt="Autorka - Janča"
+            class="main__janca"
+          />
+        </a>
+      </div>
+
+      <div>
+        <a href="projekt.html" class="main__middlebar">
+          <img
+            src="./img/projekt.jpg"
+            alt="Projekt-náhled"
+            class="main__projekt"
+          />
+          <img
+            src="./img/click_white.png"
+            alt="Click pointer"
+            class="main__click"
+          />
+        </a>
+      </div>
+
+      <div class="main__sidebar main__sidebar--right">
+        <a href="jarca.html">
+          <p class="main__name main__name--jarca">Jarmila</p>
+          <img
+            src="./img/jarca.png"
+            alt="Autorka - Jarča"
+            class="main__jarca"
+          />
+        </a>
+      </div>
+    </main>
+
+    <!-- <div class="container">
+      <div class="jarca">
+        <a href="jarca.html"><button>Jarča</button></a>
+      </div>
+      <div class="projekt">
+        <a href="projekt.html"><button>O projektu</button></a>
+      </div>
+      <div class="janca">
+        <a href="janca.html"><button>Janča</button></a>
+      </div>
+    </div> -->
+  </body>
 </html>
