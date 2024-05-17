@@ -6,6 +6,7 @@
 
 html {
   min-height: 100vh;
+  font-size: 16px;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
 
 .menu__title {
   padding-left: 2rem;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: Michroma, sans-serif;
 }
 
@@ -48,8 +49,8 @@ body {
   display: inline-block;
   color: #d9d9d9;
   text-decoration: none;
-  padding: 2rem 3rem;
-  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
 }
 
 .main__board {
@@ -59,11 +60,11 @@ body {
 }
 
 .main__sidebar--left {
-  margin: 12rem 3rem auto 8rem;
+  margin: 3rem 3rem auto 8rem;
 }
 
 .main__sidebar--right {
-  margin: 12rem 8rem auto 3rem;
+  margin: 3rem 8rem auto 3rem;
 }
 
 .main__sidebar a {
@@ -83,21 +84,21 @@ body {
 .main__name {
   color: #115b04;
   font-family: Michroma, sans-serif;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
 .main__middlebar {
-  min-width: 60vw;
+  max-width: 60vw;
   display: flex;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 2rem;
   position: relative;
 }
 
 .main__click {
   position: absolute;
-  width: 300px;
+  width: 100px;
   top: 45%;
   left: 47%;
   animation: move 2s linear infinite;
@@ -139,12 +140,10 @@ body {
   color: #115b04;
   border-radius: 10px;
   padding: 1rem 1rem 1rem 1em;
-  margin-right: 25rem;
-  margin-left: 25rem;
-  margin-top: 10rem;
+  margin: 5rem 25rem auto 25rem;
   background-color: white;
   font-family: "Courier New", Courier, monospace;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 button {

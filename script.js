@@ -6,7 +6,7 @@ const jancaTitle = document.querySelector(".main__name--janca");
 
 // Kroužkování jména
 janca.addEventListener("mouseenter", () => {
-  jancaTitle.style.border = "5px solid #115b04";
+  jancaTitle.style.border = "3px solid #115b04";
   jancaTitle.style.borderRadius = "15px";
 });
 
@@ -15,7 +15,7 @@ janca.addEventListener("mouseleave", () => {
 });
 
 jarca.addEventListener("mouseenter", () => {
-  jarcaTitle.style.border = "5px solid #115b04";
+  jarcaTitle.style.border = "3px solid #115b04";
   jarcaTitle.style.borderRadius = "15px";
 });
 
